@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../images/bg-image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .left-section {
+    flex: 1;
+    background-image: url('../images/login-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .right-section {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  #create-account {
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .form-heading {
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(32, 161, 118);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-container .icon {
+    position: absolute;
+    left: 10px;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color:  rgb(32, 161, 118);
+    color: #f9f9f9;
+  }
+  
+  .input-container input::placeholder {
+    color: white;
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .remember-me, .forget-password {
+    font-size: 14px;
+    color: rgb(32, 161, 118);
+    font-weight: 400;
+    cursor: pointer;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  
+  .forget-password:hover {
+    text-decoration: underline;
+  }
+  
+  .submit-button {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(32, 161, 118);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 60px;
+  }
+  
+  .submit-button:hover {
+    background-color: rgb(15, 80, 58);
+  }
+  
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .left-section {
+      padding: 20px;
+      text-align: center;
+    }
+
+   #create-account{
+    margin-top: 80px;
+   }
+  
+    .right-section {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-heading {
+      font-size: 18px;
+    }
+  
+    .input-container input {
+      padding: 8px 8px 8px 30px;
+      font-size: 13px;
+    }
+  
+    .submit-button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
